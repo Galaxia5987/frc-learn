@@ -18,4 +18,6 @@ In FRC, We have four options when choosing our programming language:
 As said, everything that can be written in Java can be written in Kotlin. But, sometimes, Kotlin simplifies the basic concepts that we need to know too much. To account for this, **we will first learn Java** thoroughly, and **then see the Kotlin equivalent**.
 Additionally, As Kotlin and Java are interchangeable, when programming the robot you will see some Java code, and it is important that you will be able to read and understand it.
 
+We will first understand and learn basic Java programs meant to run on a computer, and later on(After the learning Kotlin), we will see how we write code for our robot.
+
 So, after making all of this clear, let's jump into learning Java!
