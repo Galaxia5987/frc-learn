@@ -57,3 +57,30 @@ You might have noticed the curly braces(`{`, `}`) surrounding everything else, T
 Just like every English/Hebrew sentence ends with a period, almost every instruction(statement) in Java must end with a semicolon(`;`).
 
 > Scopes don't need semicolons, and instead have curly braces(`{`, `}`)
+
+### Comments
+Java will ignore anything in comments.
+
+* Inline (single line) comments start with `//`
+* Block (multi-line) comments start with `/*`, and end with `*/`
+
+Comments can be used to explain code
+Writing human-readable code is very
+important, and adding comments can help
+with readability
+
+```java
+// I don't do anything!
+
+/* Yeah,
+
+me
+
+neither */
+
+/**
+
+* I look fancy!
+
+*/
+```
