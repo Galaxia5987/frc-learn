@@ -1,0 +1,10 @@
+site_name: FRC Learn
+theme:
+  name: material
+  language: en
+  palette:
+    scheme: slate
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
