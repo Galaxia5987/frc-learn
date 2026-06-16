@@ -13,4 +13,4 @@ A FRC robot is complex piece of mechanical engineering, electronics, and eventua
 
 * **Sensors**: We use sensors to get feedback from the real world. From using an [Encoder](https://en.wikipedia.org/wiki/Rotary_encoder) to measure angles, to using cameras and lasers to detect object and localize ourselves in the field.
 
-* **Co-Processors**: We also use addional compute units called Coprocessors for tasks that would have been too much on the main processor. This is mostly used for cameras and vision systems.
+* **Co-Processors**: We also use addional compute units called Coprocessors for tasks that would have been too much on the main processor. This is mostly used for cameras and vision systems. We usually use [Raspberry Pi](https://www.raspberrypi.com/), [Rubik Pi](https://www.thundercomm.com/product/rubik-pi/), or [Orange Pi](http://www.orangepi.org/) as our coprocessors.
