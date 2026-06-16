@@ -16,8 +16,26 @@
 * Methods
 * Static keyword
 * Basic Polymorphism, with an emphasis on Compositions and Interfaces
-* Basic OOP patterns - Singleton, Dependency Injection...
+* Singletons
 
+### Advanced Java
+* Lambdas
 
+## Kotlin
+### Kotlin Basics
+* Basic Syntax Differences
+* Variables(mutables, immutables)
+* Null safety
 
+### Functional Programming
+* Top level functions 
+* Default arguments
+* Extension Functions
 
+### Object-Oriented Kotlin
+* Constructors and the million ways there are to make them
+* Data Classes
+* `object` classes
+
+### Advanced Kotlin
+* Scope Functions
