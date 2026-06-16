@@ -1,4 +1,8 @@
 # Syllabus
+## Introduction to Robotics
+* What does our robot consist of?
+* Our controller
+
 ## Basic Java Programming
 ### Java Fundamentals
 * Basic Syntax and Structure
@@ -36,6 +40,24 @@
 * Constructors and the million ways there are to make them
 * Data Classes
 * `object` classes
+* Enums
 
 ### Advanced Kotlin
 * Scope Functions
+
+## WPILib and Command based programming
+### WPILib
+* What is WPILib and why do we need it?
+* Motors and sensors in abstract
+* Subsystems
+* The Command Based approach vs The Functional approach
+
+### Command Based Programming
+* What is a command?
+* The Scheduler
+* Types of commands
+* Triggers
+* The lifecycle of commands
+* Requirements
+* Default Commands
+* Command Groups
