@@ -25,6 +25,14 @@
 ### Advanced Java
 * Lambdas
 
+## Version Control
+### Git
+* Commits
+* Branches
+### Github
+* Pull Requests
+* CI
+
 ## Kotlin
 ### Kotlin Basics
 * Basic Syntax Differences
@@ -65,6 +73,22 @@
 * Default Commands
 * Command Groups
 
+### Geometry
+* Points
+* Translations, Transforms
+* Rotations
+* Vectors
+* Coordinate System
+
+### Units
+* How to use the units library
+* A touch on performance when using the units library
+
+## Motors and Sensors
+* CANBus
+* Types of motors and sensors
+* Phoenix6 API and Configurations
+
 ## State Machines
 * What are they and how they help us?
 * Ways to make a state machine
@@ -83,7 +107,20 @@
 ## Debugging and using Diagnostic tools
 * What is Network Table?
 * Logging to Network Table
+* Inputs vs Outputs
+
 ### AdvantageScope
 * What is AdvantageKit?
 * How to use AdvantageScope
 * Graphs, Views, Fields...
+
+### Simulation
+* A brief on IO interfaces
+
+## Vision and Odometry
+* Pose Estimation and fusion
+
+### PhotonVision
+* What is it and how it's used
+* Hardware
+* Intrinsics Calibration
