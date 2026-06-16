@@ -45,6 +45,9 @@
 ### Advanced Kotlin
 * Scope Functions
 
+## Networking
+* Basic Network Understanding
+
 ## WPILib and Command based programming
 ### WPILib
 * What is WPILib and why do we need it?
@@ -61,3 +64,26 @@
 * Requirements
 * Default Commands
 * Command Groups
+
+## State Machines
+* What are they and how they help us?
+* Ways to make a state machine
+
+## Closed Loop Control
+* Introduction to Control Theory
+* Feedback Loop Fundamentals
+* Sensors and Feedback Sources
+
+### The PID Controller
+* PID Terms and their meaning
+* Feedforward control and it's importance
+* Motion Profiling
+* SysId
+
+## Debugging and using Diagnostic tools
+* What is Network Table?
+* Logging to Network Table
+### AdvantageScope
+* What is AdvantageKit?
+* How to use AdvantageScope
+* Graphs, Views, Fields...
