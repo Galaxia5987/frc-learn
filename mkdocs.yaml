@@ -1,4 +1,7 @@
 site_name: FRC Learn
+repo_name: Galaxia5987/frc-learn
+repo_url: https://github.com/Galaxia5987/frc-learn
+edit_uri: edit/main/docs/
 theme:
   name: material
   language: en
@@ -7,6 +10,7 @@ theme:
   features:
     - navigation.footer
     - content.code.copy
+    - navigation.expand
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
