@@ -1,7 +1,7 @@
 # Arithmetic Operations
 
 In this section we are going to learn about what everyone loves the most - Math! Not really.
-But in robotics, math is really important, from basic controller to complex vectors and transformations, we use math, and specificly, arithmetic operations, all the time.
+But in robotics, math is really important, from basic controller to complex vectors and transformations, we use math, and specificly, arithmetic(math) operations, all the time.
 
 ## Operators
 In Java, we have all the basic arithmetic operations you already know from 3rd grade, so instead of explaining everything like you are dumb, just look at the following examples:
