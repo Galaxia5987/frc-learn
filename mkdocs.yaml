@@ -7,7 +7,10 @@ theme:
   language: en
   palette:
     scheme: slate
+  icon:
+    edit: fontawesome/solid/pen
   features:
+    - content.action.edit
     - navigation.footer
     - content.code.copy
     - navigation.expand
