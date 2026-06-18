@@ -9,6 +9,13 @@ This guide is built as documentation site, every "lesson" is divided into a sepe
 
 It's recommended to just go with the order, and click the "Next" button at the end of the page after finishing each lesson. That way, you can be sure you are reading every document and learning everything.
 
+## What it comes to solve
+As much as I like and appreciate the WPILib documentation, and I personally think it's great, it doesn't fit for most students learning about FRC programming for the first time.
+
+It has many outdated, or advanced topics, that can confuse most students. Additionally, it does not teach programming.
+
+This guide aims to solve all of these problems.
+
 ## Contributing
 
 Contributions are more than welcome! Please just pick something from the [Syllabus](docs/1-syllabus.md) and write about it. Or add a topic to the Syllabus and write about.
