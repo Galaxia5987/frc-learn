@@ -40,6 +40,7 @@ Even though they look different and have different speeds, they were all built u
 
 ## The 4 Pillars of OOP
 In Object-Oriented Programming we have 4 pillars - Encapsulation, Inheritance, Polymorphism, and Abstraction.
+In this section we'll only talk about Encapsulation and Abstraction, and leave the remaining two to later on.
 
 <figure markdown="span">
   ![4 Pillars of OOP](../../images/oop-pillars.png)
