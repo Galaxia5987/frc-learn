@@ -9,6 +9,7 @@ theme:
     scheme: slate
   icon:
     edit: fontawesome/solid/pen
+    repo: fontawesome/brands/github
   features:
     - content.action.edit
     - navigation.footer
