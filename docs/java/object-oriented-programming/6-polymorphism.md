@@ -82,3 +82,44 @@ public class Main {
 ```
 
 See what we did there? Java automatically figured out which implementation it needed to run, and run the correct one. Great!
+
+## Danger!
+
+As cool as polymorphism in inheritance is, it can lead to many problems.
+
+### Strict Relationship
+Inheritance strictly relies on an "is a" relationship (a Dog **is an** Animal).
+But what happens when completely unrelated objects share a behavior?
+
+Imagine we have a Bird class that has a `fly()` method.
+Now, we want to create an Airplane class. An airplane can also fly! But an Airplane is clearly not an Animal.
+
+We can't put `fly()` inside Animal(dogs don't fly).
+
+We can't make Airplane extend Animal(an airplane is an Animal).
+
+If you write a separate `fly()` method for both, you lose the magic of polymorphism - you can't group them together.
+
+### Single Inheritance
+
+In Java, a class can only extend one superclass.
+
+> This is to prevent the ["Diamond Problem"](https://www.geeksforgeeks.org/cpp/diamond-problem-in-cpp/).
+
+But real life isn't always that simple. A lot of time, we will need to provide multiple interfaces.
+
+### The Forced Stuff Problem
+(Could'nt find a better name, sorry!)
+
+When we inherit from a superclass, we inherit everything
+Sometimes, that's not what we want.
+
+Let's say we put a `fly()` method in our Bird superclass because most birds fly. Then, you create a Penguin class.
+By extending Bird, it will automatically inherit `fly()`.
+Now we have a penguin with a `fly()` method, which makes no sense!
+We would have to awkwardly override the method to do nothing.
+
+### Solution
+
+We actually rarely use class based polymorphism because of all of these problems, and have a special tool called interfaces that fixes this.
+Next, we will learn about interfaces.
