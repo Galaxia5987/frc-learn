@@ -14,7 +14,7 @@ public class Car{
 }
 ```
 
-> Notice the public keyword. It just means that other classes are able to access and create objects of our class.
+> Notice the public keyword. It just means that other classes are able to access and create objects of our class. We'll look into this keyword in details later on in the [Access Modifiers](#access-modifiers) section.
 
 ## Defining Properties
 
