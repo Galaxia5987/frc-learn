@@ -9,6 +9,7 @@ At it's core, the Singleton is a design pattern that lets you ensure that a clas
 Imagine having a our swerve drivetrain as an object in code, we only have one swerve chassis, and thus only need one instance of it in our codebase.
 
 In this example, the Singleton pattern gives us two distinct advantages:
+
 1. **Global Access**: We don't need to think about in what scope we stored the instance. Every scope of every class has access to the instance through it's static getter.
 
 2. **One Instance Promise**: We don't have to worry about accidentally creating multiple instances of our drivetrain(which we obviously have one). Instead, everything is managed for us.
