@@ -1,0 +1,10 @@
+[project]
+name = "frc-learn"
+version = "0.1.0"
+description = "A collection of documents explaining everything needed for FRC"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+"mkdocs-material",
+"mkdocs-awesome-pages-plugin"
+]

@@ -1,1 +1,1 @@
-mkdocs serve --livereload
+uv run mkdocs serve --livereload
