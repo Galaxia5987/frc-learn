@@ -1485,9 +1485,177 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../version-control/github/1-pull-requests/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pull Requests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../version-control/github/2-ci/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Continuous Integration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kotlin
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Kotlin
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../kotlin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction to Kotlin
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../kotlin/1-basic-syntax/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Basic Syntax
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -1651,21 +1819,26 @@ Like in arithmetic operators which work on numbers, logic operators work on logi
 <p>We have 3 types of logic operators, they are all diffrent, but what they have in common is that they all return a boolean(<code>true</code> or <code>false</code>).</p>
 <h2 id="and-operator">AND Operator</h2>
 <p>The AND operator, written like <code>&amp;&amp;</code>, checks if both sides of the condition are true. If even one side is false, the entire thing(called expression) is false.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kt">boolean</span><span class="w"> </span><span class="n">hasTicket</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kt">boolean</span><span class="w"> </span><span class="n">hasId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kt">boolean</span><span class="w"> </span><span class="n">canEnter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hasTicket</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">hasId</span><span class="p">;</span>
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Java</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kt">boolean</span><span class="w"> </span><span class="n">hasTicket</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
+<span class="kt">boolean</span><span class="w"> </span><span class="n">hasId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
+<span class="kt">boolean</span><span class="w"> </span><span class="n">canEnter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hasTicket</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">hasId</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
 <h2 id="or-operator">OR Operator</h2>
 <p>The OR operator, written like <code>||</code>, checks if at least one side of the condition is true. It only returns false if both sides are false.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kt">boolean</span><span class="w"> </span><span class="n">hasPaid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kt">boolean</span><span class="w"> </span><span class="n">isVip</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="kt">boolean</span><span class="w"> </span><span class="n">canEnter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hasPaid</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">isVip</span><span class="p">;</span>
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Java</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kt">boolean</span><span class="w"> </span><span class="n">hasPaid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="p">;</span>
+<span class="kt">boolean</span><span class="w"> </span><span class="n">isVip</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
+<span class="kt">boolean</span><span class="w"> </span><span class="n">canEnter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hasPaid</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">isVip</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
 <h2 id="not-operator">NOT Operator</h2>
 <p>The NOT operator, written like <code>!</code>, it only works on one boolean at a time, and its job is to flip the value. If something is true, <code>!</code> makes it false. If it's false, <code>!</code> makes it true.
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kt">boolean</span><span class="w"> </span><span class="n">isRaining</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kt">boolean</span><span class="w"> </span><span class="n">isSkyClear</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">!</span><span class="n">isRaining</span><span class="p">;</span>
-</code></pre></div></p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Java</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kt">boolean</span><span class="w"> </span><span class="n">isRaining</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
+<span class="kt">boolean</span><span class="w"> </span><span class="n">isSkyClear</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">!</span><span class="n">isRaining</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div></p>
 <h2 id="comparisons">Comparisons</h2>
 <p>In Java, comparison operators (or "relational operators" if you want to get fancy) are used to compare two values.
 Just like logical operators, every comparison results in a simple boolean(<code>true</code> or <code>false</code>).</p>
@@ -1675,39 +1848,50 @@ This checks if the value on the left is exactly the same as the value on the rig
 <blockquote>
 <p>Warning: Do not confuse a single equals sign(<code>=</code> means assigning a value to a variable) with a double equals sign(<code>==</code> mean comparison, checking if equals).</p>
 </blockquote>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">score</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kt">boolean</span><span class="w"> </span><span class="n">isPerfectScore</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">score</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span><span class="w"> </span><span class="c1">// true</span>
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Java</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">score</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span>
+<span class="kt">boolean</span><span class="w"> </span><span class="n">isPerfectScore</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">score</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span><span class="w"> </span><span class="c1">// true</span>
+</code></pre></div></td></tr></table></div>
 <h3 id="not-equal-to">Not equal to</h3>
 <p>Written as <code>!=</code>.
 This is the opposite of <code>==</code>. It returns true if the values are different.</p>
 <blockquote>
 <p>Notice it uses the <code>!</code> sign, which we learned means the opposite in Java.</p>
 </blockquote>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">passwordAttempt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1234</span><span class="p">;</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kt">int</span><span class="w"> </span><span class="n">correctPassword</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">9999</span><span class="p">;</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="kt">boolean</span><span class="w"> </span><span class="n">isIncorrectPassword</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">passwordAttempt</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">correctPassword</span><span class="p">;</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c1">// Notice that this can also be written like this:</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="kt">boolean</span><span class="w"> </span><span class="n">isIncorrectPassword</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">!</span><span class="p">(</span><span class="n">passwordAttempt</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">correctPassword</span><span class="p">);</span><span class="w"> </span><span class="c1">//This uses both the NOT operator we learned about and the equals operator.</span>
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Java</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">passwordAttempt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1234</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">correctPassword</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">9999</span><span class="p">;</span>
+<span class="kt">boolean</span><span class="w"> </span><span class="n">isIncorrectPassword</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">passwordAttempt</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">correctPassword</span><span class="p">;</span>
+<span class="c1">// Notice that this can also be written like this:</span>
+<span class="kt">boolean</span><span class="w"> </span><span class="n">isIncorrectPassword</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">!</span><span class="p">(</span><span class="n">passwordAttempt</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">correctPassword</span><span class="p">);</span><span class="w"> </span><span class="c1">//This uses both the NOT operator we learned about and the equals operator.</span>
+</code></pre></div></td></tr></table></div>
 <h3 id="greater-than-and-less-than">Greater than and Less than</h3>
 <p>These work exactly like they did in 3rd grade.</p>
 <p><code>&gt;</code> returns true if the left side is bigger(but doesn't equal to) than the right side.</p>
 <p><code>&lt;</code> returns true if the left side is smaller(but doesn't equal to) than the right side.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kt">int</span><span class="w"> </span><span class="n">speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">75</span><span class="p">;</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="kt">int</span><span class="w"> </span><span class="n">speedLimit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">60</span><span class="p">;</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="kt">boolean</span><span class="w"> </span><span class="n">isSpeeding</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">speed</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">speedLimit</span><span class="p">;</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="kt">boolean</span><span class="w"> </span><span class="n">isGood</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">speed</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">speedLimit</span><span class="p">;</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="kt">boolean</span><span class="w"> </span><span class="n">isOnPoint</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">speed</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">speedLimit</span><span class="p">;</span>
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Java</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">speed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">75</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">speedLimit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">60</span><span class="p">;</span>
+<span class="kt">boolean</span><span class="w"> </span><span class="n">isSpeeding</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">speed</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">speedLimit</span><span class="p">;</span>
+<span class="kt">boolean</span><span class="w"> </span><span class="n">isGood</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">speed</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">speedLimit</span><span class="p">;</span>
+<span class="kt">boolean</span><span class="w"> </span><span class="n">isOnPoint</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">speed</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">speedLimit</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
 <h3 id="greater-than-or-equal-to-and-less-than-or-equal-to">Greater than or equal to and Less than or equal to</h3>
 <p>These are very similar to the basic greater than and less than, but they can also be equal.
 <code>&gt;=</code> returns true if the left side is bigger or equal to than the right side.</p>
 <p><code>&lt;=</code> returns true if the left side is smaller or equal to than the right side.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kt">double</span><span class="w"> </span><span class="n">heightInMeters</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.4</span><span class="p">;</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="kt">double</span><span class="w"> </span><span class="n">rollerCoasterRequirement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.4</span><span class="p">;</span>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="kt">boolean</span><span class="w"> </span><span class="n">canEnter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">heightInMeters</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">rollerCoasterRequirement</span><span class="p">;</span>
-</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Java</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kt">double</span><span class="w"> </span><span class="n">heightInMeters</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.4</span><span class="p">;</span>
+<span class="kt">double</span><span class="w"> </span><span class="n">rollerCoasterRequirement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.4</span><span class="p">;</span>
+<span class="kt">boolean</span><span class="w"> </span><span class="n">canEnter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">heightInMeters</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">rollerCoasterRequirement</span><span class="p">;</span>
+</code></pre></div></td></tr></table></div>
 
 
 
