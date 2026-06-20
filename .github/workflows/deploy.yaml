@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       
       - name: Configure Git Credentials
         run: |
@@ -31,6 +33,11 @@ jobs:
           restore-keys: |
             mkdocs-material-
             
-      - run: uv sync
+      - name: Sync Dependencies
+        run: uv sync
       
-      - run: uv run mkdocs gh-deploy --force
+      - name: Deploy Docs
+        env:
+          MKDOCS_GIT_COMMITTERS_APIKEY: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_CD: true
+        run: uv run mkdocs gh-deploy --force

@@ -32,6 +32,10 @@ markdown_extensions:
 
 plugins:
   - awesome-pages
+  - git-committers:
+      enabled: !ENV [GITHUB_CD, false]
+      repository: Galaxia5987/frc-learn
+      branch: main
 
 extra_javascript:
   - javascripts/mathjax.js
