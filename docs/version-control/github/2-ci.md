@@ -2,7 +2,7 @@
 
 Continuous Integration(commonly abbreviated as "CI") is the practice of automatic builds, tests, and integration of code changes within a repository.
 
-For our use case, it's a tool that lets us make sure that changes we proposed(by a [Pull Request](./pull-requests.md)) are complaint with the standards we set.
+For our use case, it's a tool that lets us make sure that changes we proposed(by a [Pull Request](./1-pull-requests.md)) are complaint with the standards we set.
 
 These are automated checks that happen on every PR, before merging.
 
