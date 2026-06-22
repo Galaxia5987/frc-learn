@@ -118,6 +118,16 @@ fun multiplyByTwo(number: Int): Int{
 
 > Note that this doesn't make it a variable, it's still a method, but it just returns something or computes it.
 
+#### Default Parameters
+
+We can provide a default value to a method parameter(or for a constructor).
+
+
+```kotlin
+fun multiply(number: Int, by: Int = 2): Int = number * by
+```
+
+
 
 ## Data Types in Kotlin
 
