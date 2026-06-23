@@ -161,3 +161,62 @@ val flag = true // Kotlin understands that this should be a boolean
 
 Also note that this feature should only be used when the type can be easily understood from glancing at the code.
 A lot of the times, Kotlin will be able to infer the type, but we should explicitly set it for code readability.
+
+## Lambdas
+
+Lambdas are written very similar to Java. They just don't need the arrow syntax.
+
+In Java you would write it like this:
+```java
+public static void runTaskIfNeeded(boolean isNeeded, Runnable task){
+        if(isNeeded){
+            task.run();
+        }
+    }
+
+public static void main(String[] args){
+    runTaskIfNeeded(()-> {
+        System.out.println("Our Lambda is running!");
+    })
+}
+```
+
+In Kotlin you can omit the arrow:
+
+```kotlin
+fun runTaskIfNeeded(isNeeded: Boolean, () -> Unit task){
+    if(isNeeded){
+        task()
+    }
+}
+
+fun main(){
+    runTaskIfNeeded(true, {
+        println("Our Lambda is running!")
+    })
+}
+```
+
+When the lambda is the last or only argument we can also write it outside the function call:
+
+```kotlin
+fun main(){
+    runTaskIfNeeded(true) {
+        println("Our lambda is running!")
+    }
+}
+```
+
+Or if we don't have any extra parameters:
+
+```kotlin
+fun runTask(task: () -> Unit){
+    task()
+}
+
+fun main(){
+    runTask {
+        println("Our Lambda is running!")
+    }
+}
+```
