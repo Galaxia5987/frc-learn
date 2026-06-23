@@ -9,28 +9,28 @@
       
       
       
-        <link rel="prev" href="../../2-introduction/">
+        <link rel="prev" href="../7-interfaces/">
       
       
-        <link rel="next" href="1-basic-syntax/">
+        <link rel="next" href="../oop-patterns/">
       
       
         
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Introduction to Programming - FRC Learn</title>
+        <title>Enums - FRC Learn</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -49,7 +49,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introduction-to-programming" class="md-skip">
+        <a href="#enums" class="md-skip">
           Skip to content
         </a>
       
@@ -88,7 +88,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="FRC Learn" class="md-header__button md-logo" aria-label="FRC Learn" data-md-component="logo">
+    <a href="../../.." title="FRC Learn" class="md-header__button md-logo" aria-label="FRC Learn" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction to Programming
+              Enums
             
           </span>
         </div>
@@ -198,7 +198,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="FRC Learn" class="md-nav__button md-logo" aria-label="FRC Learn" data-md-component="logo">
+    <a href="../../.." title="FRC Learn" class="md-nav__button md-logo" aria-label="FRC Learn" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -228,7 +228,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -255,7 +255,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../1-syllabus/" class="md-nav__link">
+      <a href="../../../1-syllabus/" class="md-nav__link">
         
   
   
@@ -282,7 +282,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../2-introduction/" class="md-nav__link">
+      <a href="../../../2-introduction/" class="md-nav__link">
         
   
   
@@ -355,20 +355,20 @@
                 
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_1" >
         
           
           <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
@@ -389,7 +389,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -404,37 +404,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Introduction to Programming
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../basic-java/" class="md-nav__link">
         
   
   
@@ -450,48 +423,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-programming" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        What is Programming?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-and-what-will-we-learn" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        How and what will we learn?
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -504,7 +435,7 @@
   
   
     <li class="md-nav__item">
-      <a href="1-basic-syntax/" class="md-nav__link">
+      <a href="../../basic-java/1-basic-syntax/" class="md-nav__link">
         
   
   
@@ -532,7 +463,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2-data-types/" class="md-nav__link">
+      <a href="../../basic-java/2-data-types/" class="md-nav__link">
         
   
   
@@ -560,7 +491,7 @@
   
   
     <li class="md-nav__item">
-      <a href="3-operators/" class="md-nav__link">
+      <a href="../../basic-java/3-operators/" class="md-nav__link">
         
   
   
@@ -588,7 +519,7 @@
   
   
     <li class="md-nav__item">
-      <a href="4-logic-operators/" class="md-nav__link">
+      <a href="../../basic-java/4-logic-operators/" class="md-nav__link">
         
   
   
@@ -616,7 +547,7 @@
   
   
     <li class="md-nav__item">
-      <a href="5-flow-control/" class="md-nav__link">
+      <a href="../../basic-java/5-flow-control/" class="md-nav__link">
         
   
   
@@ -644,7 +575,7 @@
   
   
     <li class="md-nav__item">
-      <a href="6-strings/" class="md-nav__link">
+      <a href="../../basic-java/6-strings/" class="md-nav__link">
         
   
   
@@ -672,7 +603,7 @@
   
   
     <li class="md-nav__item">
-      <a href="7-looping/" class="md-nav__link">
+      <a href="../../basic-java/7-looping/" class="md-nav__link">
         
   
   
@@ -700,7 +631,7 @@
   
   
     <li class="md-nav__item">
-      <a href="8-methods/" class="md-nav__link">
+      <a href="../../basic-java/8-methods/" class="md-nav__link">
         
   
   
@@ -733,20 +664,20 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
         
           
           <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
@@ -767,7 +698,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -785,7 +716,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../object-oriented-programming/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -813,7 +744,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../object-oriented-programming/1-making-classes/" class="md-nav__link">
+      <a href="../1-making-classes/" class="md-nav__link">
         
   
   
@@ -841,7 +772,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../object-oriented-programming/2-making-instances/" class="md-nav__link">
+      <a href="../2-making-instances/" class="md-nav__link">
         
   
   
@@ -869,7 +800,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../object-oriented-programming/3-static-keyword/" class="md-nav__link">
+      <a href="../3-static-keyword/" class="md-nav__link">
         
   
   
@@ -897,7 +828,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../object-oriented-programming/4-next-steps/" class="md-nav__link">
+      <a href="../4-next-steps/" class="md-nav__link">
         
   
   
@@ -925,7 +856,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../object-oriented-programming/5-inheritance/" class="md-nav__link">
+      <a href="../5-inheritance/" class="md-nav__link">
         
   
   
@@ -953,7 +884,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../object-oriented-programming/6-polymorphism/" class="md-nav__link">
+      <a href="../6-polymorphism/" class="md-nav__link">
         
   
   
@@ -981,7 +912,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../object-oriented-programming/7-interfaces/" class="md-nav__link">
+      <a href="../7-interfaces/" class="md-nav__link">
         
   
   
@@ -1006,10 +937,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../object-oriented-programming/8-enums/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enums
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1025,6 +983,48 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Problem
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is it?
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1086,7 +1086,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../object-oriented-programming/oop-patterns/" class="md-nav__link">
+      <a href="../oop-patterns/" class="md-nav__link">
         
   
   
@@ -1114,7 +1114,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../object-oriented-programming/oop-patterns/1-singleton/" class="md-nav__link">
+      <a href="../oop-patterns/1-singleton/" class="md-nav__link">
         
   
   
@@ -1207,7 +1207,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../advanced-java/" class="md-nav__link">
+      <a href="../../advanced-java/" class="md-nav__link">
         
   
   
@@ -1235,7 +1235,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../advanced-java/1-lambdas/" class="md-nav__link">
+      <a href="../../advanced-java/1-lambdas/" class="md-nav__link">
         
   
   
@@ -1271,7 +1271,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../1-next-steps/" class="md-nav__link">
+      <a href="../../1-next-steps/" class="md-nav__link">
         
   
   
@@ -1355,7 +1355,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../version-control/" class="md-nav__link">
+      <a href="../../../version-control/" class="md-nav__link">
         
   
   
@@ -1383,7 +1383,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../version-control/git/" class="md-nav__link">
+      <a href="../../../version-control/git/" class="md-nav__link">
         
   
   
@@ -1460,7 +1460,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../version-control/github/" class="md-nav__link">
+      <a href="../../../version-control/github/" class="md-nav__link">
         
   
   
@@ -1488,7 +1488,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../version-control/github/1-pull-requests/" class="md-nav__link">
+      <a href="../../../version-control/github/1-pull-requests/" class="md-nav__link">
         
   
   
@@ -1516,7 +1516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../version-control/github/2-ci/" class="md-nav__link">
+      <a href="../../../version-control/github/2-ci/" class="md-nav__link">
         
   
   
@@ -1608,7 +1608,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kotlin/" class="md-nav__link">
+      <a href="../../../kotlin/" class="md-nav__link">
         
   
   
@@ -1636,7 +1636,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kotlin/1-basic-syntax/" class="md-nav__link">
+      <a href="../../../kotlin/1-basic-syntax/" class="md-nav__link">
         
   
   
@@ -1713,7 +1713,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kotlin/functional-programming/1-top-level-functions/" class="md-nav__link">
+      <a href="../../../kotlin/functional-programming/1-top-level-functions/" class="md-nav__link">
         
   
   
@@ -1741,7 +1741,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kotlin/functional-programming/2-extension-functions/" class="md-nav__link">
+      <a href="../../../kotlin/functional-programming/2-extension-functions/" class="md-nav__link">
         
   
   
@@ -1826,7 +1826,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kotlin/kotlin-oop/1-defining-classes/" class="md-nav__link">
+      <a href="../../../kotlin/kotlin-oop/1-defining-classes/" class="md-nav__link">
         
   
   
@@ -1854,7 +1854,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kotlin/kotlin-oop/2-object-classes/" class="md-nav__link">
+      <a href="../../../kotlin/kotlin-oop/2-object-classes/" class="md-nav__link">
         
   
   
@@ -1882,7 +1882,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kotlin/kotlin-oop/3-data-classes/" class="md-nav__link">
+      <a href="../../../kotlin/kotlin-oop/3-data-classes/" class="md-nav__link">
         
   
   
@@ -1918,7 +1918,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kotlin/2-scope-functions/" class="md-nav__link">
+      <a href="../../../kotlin/2-scope-functions/" class="md-nav__link">
         
   
   
@@ -2002,7 +2002,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../networking/" class="md-nav__link">
+      <a href="../../../networking/" class="md-nav__link">
         
   
   
@@ -2037,7 +2037,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../3-reading-stacktraces/" class="md-nav__link">
+      <a href="../../../3-reading-stacktraces/" class="md-nav__link">
         
   
   
@@ -2113,7 +2113,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../wpilib/" class="md-nav__link">
+      <a href="../../../wpilib/" class="md-nav__link">
         
   
   
@@ -2168,10 +2168,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-programming" class="md-nav__link">
+  <a href="#the-problem" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What is Programming?
+        The Problem
       
     </span>
   </a>
@@ -2179,10 +2179,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-and-what-will-we-learn" class="md-nav__link">
+  <a href="#what-is-it" class="md-nav__link">
     <span class="md-ellipsis">
       
-        How and what will we learn?
+        What is it?
       
     </span>
   </a>
@@ -2206,7 +2206,7 @@
 
 
   
-    <a href="https://github.com/Galaxia5987/frc-learn/edit/main/docs/java/basic-java/index.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/Galaxia5987/frc-learn/edit/main/docs/java/object-oriented-programming/8-enums.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M352.9 21.2 308 66.1 445.9 204l44.9-44.9c13.6-13.5 21.2-31.9 21.2-51.1s-7.6-37.6-21.2-51.1l-35.7-35.7C441.6 7.6 423.2 0 404 0s-37.6 7.6-51.1 21.2M274.1 100 58.9 315.1c-10.7 10.7-18.5 24.1-22.6 38.7L.9 481.6c-2.3 8.3 0 17.3 6.2 23.4s15.1 8.5 23.4 6.2l127.8-35.5c14.6-4.1 27.9-11.8 38.7-22.6l215-215.2z"/></svg>
     </a>
@@ -2214,25 +2214,58 @@
   
 
 
-<h1 id="introduction-to-programming">Introduction to Programming</h1>
-<h2 id="what-is-programming">What is Programming?</h2>
-<blockquote>
-<p>"Computer programming or coding is the composition of sequences of instructions, called programs, that computers can follow to perform tasks. It involves designing and implementing algorithms, step-by-step specifications of procedures" - Wikipedia, <a href="https://en.wikipedia.org/wiki/Computer_programming">Computer Programming</a></p>
-</blockquote>
-<p>At it's core, programming is the process of giving a computer a specific set of instructions to perform a task. Because computers cannot think(mostly) or understand human languages, we act as the logic makers, breaking down complex problems into logical commands that a machine can execute.</p>
-<h2 id="how-and-what-will-we-learn">How and what will we learn?</h2>
-<p>In FRC, We have four options when choosing our programming language:</p>
-<ul>
-<li><strong>C++</strong>: This is a low-level, complex, language with a very steep learning curve. In FRC, it doesn't feature enough advantages over other languages, and it isn't the popular choice for teams.</li>
-<li><strong>Python</strong>: This is a high level, simple, language with a very gentle learning curve. But, as a result of it's simplicity, it's harder to use when making larger and more complex projects like our robot code.</li>
-<li><strong>Java</strong>: This is a high level, mostly simple, language with a noticeable learning curve. But, It has many useful features. Java also suffers from <a href="https://en.wikipedia.org/wiki/Boilerplate_code">boilerplate</a> and it might be a bit tedious to type. It is also the most supported language for FRC, supporting a lot of libraries(extensions) that Python or C++ don't.</li>
-<li><strong>Kotlin</strong>: Kotlin is a successor to Java, and has all of Java's features, but with simpler syntax(our grammer), and less <a href="https://en.wikipedia.org/wiki/Boilerplate_code">boilerplate</a>. Everything that can be written in Java, has it's equivalent in Kotlin.</li>
-</ul>
-<p><strong>When writting our robot code, we will use Kotlin.</strong>
-As said, everything that can be written in Java can be written in Kotlin. But, sometimes, Kotlin simplifies the basic concepts that we need to know too much. To account for this, <strong>we will first learn Java</strong> thoroughly, and <strong>then see the Kotlin equivalent</strong>.
-Additionally, As Kotlin and Java are interchangeable, when programming the robot you will see some Java code, and it is important that you will be able to read and understand it.</p>
-<p>We will first understand and learn basic Java programs meant to run on a computer, and later on(After the learning Kotlin), we will see how we write code for our robot.</p>
-<p>So, after making all of this clear, let's jump into learning Java!</p>
+<h1 id="enums">Enums</h1>
+<p>Sometimes we want to represent options. So far, we learned how to do this using Strings. Imagine the following scenario:</p>
+<h2 id="the-problem">The Problem</h2>
+<p>We are building the software for a coffee shop.
+When someone places an order, our software needs to track its progress. Using Strings, you write something like this:</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Java</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">String</span><span class="w"> </span><span class="n">orderStatus</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;PREPARING&quot;</span><span class="p">;</span>
+
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">orderStatus</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="s">&quot;PREPARING&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Still in the making!&quot;</span><span class="p">);</span>
+<span class="p">}</span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="p">(</span><span class="n">orderStatus</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="s">&quot;READY&quot;</span><span class="p">)){</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Your order is ready!&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p>This works fine. But, this can cause many problems. Imagine that suddenly some other team member tries to access this variable and check it. They write something like this:</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Java</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">orderStatus</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="s">&quot;ready&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">sendReadyMessage</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p>Notice the problem? The variable stores the value "READY", but we check for "ready". This is a very common problem, that enums come to solve.</p>
+<h2 id="what-is-it">What is it?</h2>
+<p>An Enum(abbreviation for Enumeration) is a custom data type that represents a fixed set of options.</p>
+<p>Instead of trusting the programmer to spell a string correctly, we define our set of valid options:</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Java</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="kd">enum</span><span class="w"> </span><span class="n">OrderStatus</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">PENDING</span><span class="p">,</span>
+<span class="w">    </span><span class="n">PREPARING</span><span class="p">,</span>
+<span class="w">    </span><span class="n">READY</span><span class="p">,</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p>Now, our code looks like this:
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Java</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">OrderStatus</span><span class="w"> </span><span class="n">currentStatus</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">OrderStatus</span><span class="p">.</span><span class="na">PREPARING</span><span class="p">;</span>
+
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">currentStatus</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">OrderStatus</span><span class="p">.</span><span class="na">READY</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;The order is ready!&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div></p>
+<p>Much safer.</p>
 
 
 
@@ -2292,7 +2325,7 @@ Additionally, As Kotlin and Java are interchangeable, when programming the robot
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../2-introduction/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Introduction to Robotics">
+          <a href="../7-interfaces/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Interfaces">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2302,20 +2335,20 @@ Additionally, As Kotlin and Java are interchangeable, when programming the robot
                 Previous
               </span>
               <div class="md-ellipsis">
-                Introduction to Robotics
+                Interfaces
               </div>
             </div>
           </a>
         
         
           
-          <a href="1-basic-syntax/" class="md-footer__link md-footer__link--next" aria-label="Next: Basic Syntax and Structure">
+          <a href="../oop-patterns/" class="md-footer__link md-footer__link--next" aria-label="Next: OOP Patterns">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Basic Syntax and Structure
+                OOP Patterns
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -2352,12 +2385,12 @@ Additionally, As Kotlin and Java are interchangeable, when programming the robot
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.action.edit", "navigation.footer", "content.code.copy", "navigation.expand"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.action.edit", "navigation.footer", "content.code.copy", "navigation.expand"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
-        <script src="../../javascripts/mathjax.js"></script>
+        <script src="../../../javascripts/mathjax.js"></script>
       
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       

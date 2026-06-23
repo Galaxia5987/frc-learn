@@ -9,28 +9,28 @@
       
       
       
-        <link rel="prev" href="../../2-introduction/">
+        <link rel="prev" href="../networking/">
       
       
-        <link rel="next" href="1-basic-syntax/">
+        <link rel="next" href="../wpilib/">
       
       
         
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Introduction to Programming - FRC Learn</title>
+        <title>Reading Stacktraces - FRC Learn</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -49,7 +49,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introduction-to-programming" class="md-skip">
+        <a href="#reading-stacktraces" class="md-skip">
           Skip to content
         </a>
       
@@ -88,7 +88,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="FRC Learn" class="md-header__button md-logo" aria-label="FRC Learn" data-md-component="logo">
+    <a href=".." title="FRC Learn" class="md-header__button md-logo" aria-label="FRC Learn" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction to Programming
+              Reading Stacktraces
             
           </span>
         </div>
@@ -198,7 +198,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="FRC Learn" class="md-nav__button md-logo" aria-label="FRC Learn" data-md-component="logo">
+    <a href=".." title="FRC Learn" class="md-nav__button md-logo" aria-label="FRC Learn" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -228,7 +228,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -255,7 +255,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../1-syllabus/" class="md-nav__link">
+      <a href="../1-syllabus/" class="md-nav__link">
         
   
   
@@ -282,7 +282,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../2-introduction/" class="md-nav__link">
+      <a href="../2-introduction/" class="md-nav__link">
         
   
   
@@ -306,20 +306,20 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -340,7 +340,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -355,20 +355,20 @@
                 
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_1" >
         
           
           <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
@@ -389,7 +389,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -404,37 +404,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Introduction to Programming
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../java/basic-java/" class="md-nav__link">
         
   
   
@@ -450,48 +423,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#what-is-programming" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        What is Programming?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-and-what-will-we-learn" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        How and what will we learn?
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -504,7 +435,7 @@
   
   
     <li class="md-nav__item">
-      <a href="1-basic-syntax/" class="md-nav__link">
+      <a href="../java/basic-java/1-basic-syntax/" class="md-nav__link">
         
   
   
@@ -532,7 +463,7 @@
   
   
     <li class="md-nav__item">
-      <a href="2-data-types/" class="md-nav__link">
+      <a href="../java/basic-java/2-data-types/" class="md-nav__link">
         
   
   
@@ -560,7 +491,7 @@
   
   
     <li class="md-nav__item">
-      <a href="3-operators/" class="md-nav__link">
+      <a href="../java/basic-java/3-operators/" class="md-nav__link">
         
   
   
@@ -588,7 +519,7 @@
   
   
     <li class="md-nav__item">
-      <a href="4-logic-operators/" class="md-nav__link">
+      <a href="../java/basic-java/4-logic-operators/" class="md-nav__link">
         
   
   
@@ -616,7 +547,7 @@
   
   
     <li class="md-nav__item">
-      <a href="5-flow-control/" class="md-nav__link">
+      <a href="../java/basic-java/5-flow-control/" class="md-nav__link">
         
   
   
@@ -644,7 +575,7 @@
   
   
     <li class="md-nav__item">
-      <a href="6-strings/" class="md-nav__link">
+      <a href="../java/basic-java/6-strings/" class="md-nav__link">
         
   
   
@@ -672,7 +603,7 @@
   
   
     <li class="md-nav__item">
-      <a href="7-looping/" class="md-nav__link">
+      <a href="../java/basic-java/7-looping/" class="md-nav__link">
         
   
   
@@ -700,7 +631,7 @@
   
   
     <li class="md-nav__item">
-      <a href="8-methods/" class="md-nav__link">
+      <a href="../java/basic-java/8-methods/" class="md-nav__link">
         
   
   
@@ -785,7 +716,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../object-oriented-programming/" class="md-nav__link">
+      <a href="../java/object-oriented-programming/" class="md-nav__link">
         
   
   
@@ -813,7 +744,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../object-oriented-programming/1-making-classes/" class="md-nav__link">
+      <a href="../java/object-oriented-programming/1-making-classes/" class="md-nav__link">
         
   
   
@@ -841,7 +772,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../object-oriented-programming/2-making-instances/" class="md-nav__link">
+      <a href="../java/object-oriented-programming/2-making-instances/" class="md-nav__link">
         
   
   
@@ -869,7 +800,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../object-oriented-programming/3-static-keyword/" class="md-nav__link">
+      <a href="../java/object-oriented-programming/3-static-keyword/" class="md-nav__link">
         
   
   
@@ -897,7 +828,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../object-oriented-programming/4-next-steps/" class="md-nav__link">
+      <a href="../java/object-oriented-programming/4-next-steps/" class="md-nav__link">
         
   
   
@@ -925,7 +856,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../object-oriented-programming/5-inheritance/" class="md-nav__link">
+      <a href="../java/object-oriented-programming/5-inheritance/" class="md-nav__link">
         
   
   
@@ -953,7 +884,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../object-oriented-programming/6-polymorphism/" class="md-nav__link">
+      <a href="../java/object-oriented-programming/6-polymorphism/" class="md-nav__link">
         
   
   
@@ -981,7 +912,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../object-oriented-programming/7-interfaces/" class="md-nav__link">
+      <a href="../java/object-oriented-programming/7-interfaces/" class="md-nav__link">
         
   
   
@@ -1009,7 +940,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../object-oriented-programming/8-enums/" class="md-nav__link">
+      <a href="../java/object-oriented-programming/8-enums/" class="md-nav__link">
         
   
   
@@ -1086,7 +1017,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../object-oriented-programming/oop-patterns/" class="md-nav__link">
+      <a href="../java/object-oriented-programming/oop-patterns/" class="md-nav__link">
         
   
   
@@ -1114,7 +1045,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../object-oriented-programming/oop-patterns/1-singleton/" class="md-nav__link">
+      <a href="../java/object-oriented-programming/oop-patterns/1-singleton/" class="md-nav__link">
         
   
   
@@ -1207,7 +1138,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../advanced-java/" class="md-nav__link">
+      <a href="../java/advanced-java/" class="md-nav__link">
         
   
   
@@ -1235,7 +1166,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../advanced-java/1-lambdas/" class="md-nav__link">
+      <a href="../java/advanced-java/1-lambdas/" class="md-nav__link">
         
   
   
@@ -1271,7 +1202,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../1-next-steps/" class="md-nav__link">
+      <a href="../java/1-next-steps/" class="md-nav__link">
         
   
   
@@ -1355,7 +1286,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../version-control/" class="md-nav__link">
+      <a href="../version-control/" class="md-nav__link">
         
   
   
@@ -1383,7 +1314,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../version-control/git/" class="md-nav__link">
+      <a href="../version-control/git/" class="md-nav__link">
         
   
   
@@ -1460,7 +1391,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../version-control/github/" class="md-nav__link">
+      <a href="../version-control/github/" class="md-nav__link">
         
   
   
@@ -1488,7 +1419,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../version-control/github/1-pull-requests/" class="md-nav__link">
+      <a href="../version-control/github/1-pull-requests/" class="md-nav__link">
         
   
   
@@ -1516,7 +1447,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../version-control/github/2-ci/" class="md-nav__link">
+      <a href="../version-control/github/2-ci/" class="md-nav__link">
         
   
   
@@ -1608,7 +1539,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kotlin/" class="md-nav__link">
+      <a href="../kotlin/" class="md-nav__link">
         
   
   
@@ -1636,7 +1567,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kotlin/1-basic-syntax/" class="md-nav__link">
+      <a href="../kotlin/1-basic-syntax/" class="md-nav__link">
         
   
   
@@ -1713,7 +1644,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kotlin/functional-programming/1-top-level-functions/" class="md-nav__link">
+      <a href="../kotlin/functional-programming/1-top-level-functions/" class="md-nav__link">
         
   
   
@@ -1741,7 +1672,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kotlin/functional-programming/2-extension-functions/" class="md-nav__link">
+      <a href="../kotlin/functional-programming/2-extension-functions/" class="md-nav__link">
         
   
   
@@ -1826,7 +1757,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kotlin/kotlin-oop/1-defining-classes/" class="md-nav__link">
+      <a href="../kotlin/kotlin-oop/1-defining-classes/" class="md-nav__link">
         
   
   
@@ -1854,7 +1785,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kotlin/kotlin-oop/2-object-classes/" class="md-nav__link">
+      <a href="../kotlin/kotlin-oop/2-object-classes/" class="md-nav__link">
         
   
   
@@ -1882,7 +1813,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kotlin/kotlin-oop/3-data-classes/" class="md-nav__link">
+      <a href="../kotlin/kotlin-oop/3-data-classes/" class="md-nav__link">
         
   
   
@@ -1918,7 +1849,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../kotlin/2-scope-functions/" class="md-nav__link">
+      <a href="../kotlin/2-scope-functions/" class="md-nav__link">
         
   
   
@@ -2002,7 +1933,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../networking/" class="md-nav__link">
+      <a href="../networking/" class="md-nav__link">
         
   
   
@@ -2034,10 +1965,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../3-reading-stacktraces/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reading Stacktraces
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -2053,6 +2011,171 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#whats-a-stack-trace" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What's a "Stack Trace"?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-an-unhandled-exception" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What's an "Unhandled Exception"?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#so-how-do-i-fix-my-issue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        So How Do I Fix My Issue?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="So How Do I Fix My Issue?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#read-the-stack-trace" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Read the Stack Trace
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#perform-code-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Perform Code Analysis
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-for-more-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Search for More Information
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-examples-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Examples &amp; Patterns
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Examples &amp; Patterns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#null-pointers-and-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Null Pointers and References
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Null Pointers and References">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixing-null-object-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixing Null Object Issues
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#divide-by-zero" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Divide by Zero
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Divide by Zero">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixing-divide-by-zero-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixing Divide By Zero Issues
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2113,7 +2236,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../wpilib/" class="md-nav__link">
+      <a href="../wpilib/" class="md-nav__link">
         
   
   
@@ -2168,10 +2291,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-is-programming" class="md-nav__link">
+  <a href="#whats-a-stack-trace" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What is Programming?
+        What's a "Stack Trace"?
       
     </span>
   </a>
@@ -2179,13 +2302,136 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-and-what-will-we-learn" class="md-nav__link">
+  <a href="#whats-an-unhandled-exception" class="md-nav__link">
     <span class="md-ellipsis">
       
-        How and what will we learn?
+        What's an "Unhandled Exception"?
       
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#so-how-do-i-fix-my-issue" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        So How Do I Fix My Issue?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="So How Do I Fix My Issue?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#read-the-stack-trace" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Read the Stack Trace
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#perform-code-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Perform Code Analysis
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-for-more-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Search for More Information
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-examples-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Examples &amp; Patterns
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Examples &amp; Patterns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#null-pointers-and-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Null Pointers and References
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Null Pointers and References">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixing-null-object-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixing Null Object Issues
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#divide-by-zero" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Divide by Zero
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Divide by Zero">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fixing-divide-by-zero-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fixing Divide By Zero Issues
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2206,7 +2452,7 @@
 
 
   
-    <a href="https://github.com/Galaxia5987/frc-learn/edit/main/docs/java/basic-java/index.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+    <a href="https://github.com/Galaxia5987/frc-learn/edit/main/docs/3-reading-stacktraces.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M352.9 21.2 308 66.1 445.9 204l44.9-44.9c13.6-13.5 21.2-31.9 21.2-51.1s-7.6-37.6-21.2-51.1l-35.7-35.7C441.6 7.6 423.2 0 404 0s-37.6 7.6-51.1 21.2M274.1 100 58.9 315.1c-10.7 10.7-18.5 24.1-22.6 38.7L.9 481.6c-2.3 8.3 0 17.3 6.2 23.4s15.1 8.5 23.4 6.2l127.8-35.5c14.6-4.1 27.9-11.8 38.7-22.6l215-215.2z"/></svg>
     </a>
@@ -2214,25 +2460,215 @@
   
 
 
-<h1 id="introduction-to-programming">Introduction to Programming</h1>
-<h2 id="what-is-programming">What is Programming?</h2>
+<h1 id="reading-stacktraces">Reading Stacktraces</h1>
 <blockquote>
-<p>"Computer programming or coding is the composition of sequences of instructions, called programs, that computers can follow to perform tasks. It involves designing and implementing algorithms, step-by-step specifications of procedures" - Wikipedia, <a href="https://en.wikipedia.org/wiki/Computer_programming">Computer Programming</a></p>
+<p>This document is copy-pasted with modifications from WPILib Docs, read the full document <a href="https://docs.wpilib.org/en/stable/docs/software/basic-programming/reading-stacktraces.html">here</a></p>
 </blockquote>
-<p>At it's core, programming is the process of giving a computer a specific set of instructions to perform a task. Because computers cannot think(mostly) or understand human languages, we act as the logic makers, breaking down complex problems into logical commands that a machine can execute.</p>
-<h2 id="how-and-what-will-we-learn">How and what will we learn?</h2>
-<p>In FRC, We have four options when choosing our programming language:</p>
+<p><code>An unexpected error has occurred.</code></p>
+<p>When your robot code hits an unexpected error, you will see this message show up in some console output (Driver Station). You'll probably also notice your robot abruptly stop. These unexpected errors are called <em>unhandled exceptions</em>.</p>
+<p>When an unhandled exception occurs, it means that your code has one or more bugs which need to be fixed.</p>
+<p>This document will explore some of the tools and techniques involved in finding and fixing those bugs.</p>
+<h2 id="whats-a-stack-trace">What's a "Stack Trace"?</h2>
+<p>The <code>unexpected error has occurred</code> message is a signal that a <em>stack trace</em> has been printed out.</p>
+<p>In Java, the <code>call stack</code> data structure is used to store information about which function or method is currently being executed.</p>
+<p>A <em>stack trace</em> prints information about what was on this stack when the unhandled exception occurred. This points you to the lines of code which were running just before the problem happened. While it doesn't always point you to the exact <em>root cause</em> of your issue, it's usually the best place to start looking.</p>
+<h2 id="whats-an-unhandled-exception">What's an "Unhandled Exception"?</h2>
+<p>An unrecoverable error is any condition which arises where the processor cannot continue executing code. It almost always implies that, even though the code compiled and started running, it no longer makes sense for execution to continue.</p>
+<p>In almost all cases, the root cause of an unhandled exception is code that isn't correctly implemented. It almost never implies that any hardware has malfunctioned.</p>
+<h2 id="so-how-do-i-fix-my-issue">So How Do I Fix My Issue?</h2>
+<h3 id="read-the-stack-trace">Read the Stack Trace</h3>
+<p>To start, search above the <code>unexpected error has occurred</code> for the stack trace.</p>
+<p>In Java and Kotlin, it should look something like this:</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>Error at frc.robot.Robot.robotInit(Robot.java:24): Unhandled exception: java.lang.NullPointerException
+        at frc.robot.Robot.robotInit(Robot.java:24)
+        at edu.wpi.first.wpilibj.TimedRobot.startCompetition(TimedRobot.java:94)
+        at edu.wpi.first.wpilibj.RobotBase.runRobot(RobotBase.java:335)
+        at edu.wpi.first.wpilibj.RobotBase.lambda$startRobot$0(RobotBase.java:387)
+        at java.base/java.lang.Thread.run(Thread.java:834)
+</code></pre></div></td></tr></table></div>
+<p>There's a few important things to pick out of here:</p>
 <ul>
-<li><strong>C++</strong>: This is a low-level, complex, language with a very steep learning curve. In FRC, it doesn't feature enough advantages over other languages, and it isn't the popular choice for teams.</li>
-<li><strong>Python</strong>: This is a high level, simple, language with a very gentle learning curve. But, as a result of it's simplicity, it's harder to use when making larger and more complex projects like our robot code.</li>
-<li><strong>Java</strong>: This is a high level, mostly simple, language with a noticeable learning curve. But, It has many useful features. Java also suffers from <a href="https://en.wikipedia.org/wiki/Boilerplate_code">boilerplate</a> and it might be a bit tedious to type. It is also the most supported language for FRC, supporting a lot of libraries(extensions) that Python or C++ don't.</li>
-<li><strong>Kotlin</strong>: Kotlin is a successor to Java, and has all of Java's features, but with simpler syntax(our grammer), and less <a href="https://en.wikipedia.org/wiki/Boilerplate_code">boilerplate</a>. Everything that can be written in Java, has it's equivalent in Kotlin.</li>
+<li>
+<p>There was an <code>Error</code></p>
+</li>
+<li>
+<p>The error was due to an <code>Unhandled exception</code></p>
+</li>
+<li>
+<p>The exception was a <code>java.lang.NullPointerException</code></p>
+</li>
+<li>
+<p>The error happened while running line <code>24</code> inside of <code>Robot.java</code></p>
+<ul>
+<li><code>robotInit</code> was the name of the method executing when the error happened.</li>
 </ul>
-<p><strong>When writting our robot code, we will use Kotlin.</strong>
-As said, everything that can be written in Java can be written in Kotlin. But, sometimes, Kotlin simplifies the basic concepts that we need to know too much. To account for this, <strong>we will first learn Java</strong> thoroughly, and <strong>then see the Kotlin equivalent</strong>.
-Additionally, As Kotlin and Java are interchangeable, when programming the robot you will see some Java code, and it is important that you will be able to read and understand it.</p>
-<p>We will first understand and learn basic Java programs meant to run on a computer, and later on(After the learning Kotlin), we will see how we write code for our robot.</p>
-<p>So, after making all of this clear, let's jump into learning Java!</p>
+</li>
+<li>
+<p><code>robotInit</code> is a function in the <code>frc.robot.Robot</code> package (AKA, your team's code)</p>
+</li>
+<li>
+<p><code>robotInit</code> was called from a number of functions from the <code>edu.wpi.first.wpilibj</code> package (AKA, the WPILib libraries)</p>
+</li>
+</ul>
+<p>The list of indented lines starting with the word <code>at</code> represent the state of the <em>stack</em> at the time the error happened. Each line represents one method, which was <em>called by</em> the method right below it.</p>
+<p>For example, If the error happened deep inside your codebase, you might see more entries on the stack:</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code>Error at frc.robot.Robot.buggyMethod(TooManyBugs.java:1138): Unhandled exception: java.lang.NullPointerException
+        at frc.robot.Robot.buggyMethod(TooManyBugs.java:1138)
+        at frc.robot.Robot.barInit(Bar.java:21)
+        at frc.robot.Robot.fooInit(Foo.java:34)
+        at frc.robot.Robot.robotInit(Robot.java:24)
+        at edu.wpi.first.wpilibj.TimedRobot.startCompetition(TimedRobot.java:94)
+        at edu.wpi.first.wpilibj.RobotBase.runRobot(RobotBase.java:335)
+        at edu.wpi.first.wpilibj.RobotBase.lambda$startRobot$0(RobotBase.java:387)
+        at java.base/java.lang.Thread.run(Thread.java:834)
+</code></pre></div></td></tr></table></div>
+<p>In this case: <code>robotInit</code> called <code>fooInit</code>, which in turn called <code>barInit</code>, which in turn called <code>buggyMethod</code>. Then, during the execution of <code>buggyMethod</code>, the <code>NullPointerException</code> occurred.</p>
+<h3 id="perform-code-analysis">Perform Code Analysis</h3>
+<p>Once you've found the stack trace, and found the lines of code which are triggering the unhandled exception, you can start the process of determining root cause.</p>
+<p>Often, just looking in (or near) the problematic location in code will be fruitful. You may notice things you forgot, or lines which don't match an example you're referencing.</p>
+<blockquote>
+<p>Developers who have lots of experience working with code will often have more luck looking at code than newer folks. That's ok, don't be discouraged! The experience will come with time.</p>
+</blockquote>
+<p>A key strategy for analyzing code is to ask the following questions:</p>
+<ul>
+<li>When was the last time the code "worked" (I.e., didn't have this particular error)?</li>
+<li>What has changed in the code between the last working version, and now?</li>
+</ul>
+<p>Frequent testing and careful code changes help make this particular strategy more effective.</p>
+<h3 id="search-for-more-information">Search for More Information</h3>
+<p><a href="https://www.google.com/">Google</a> is a phenomenal resource for understanding the root cause of errors. Searches involving the programming language and the name of the exception will often yield good results on more explanations for what the error means, how it comes about, and potential fixes.</p>
+<h2 id="common-examples-patterns">Common Examples &amp; Patterns</h2>
+<p>There are a number of common issues which result in runtime exceptions.</p>
+<h3 id="null-pointers-and-references">Null Pointers and References</h3>
+<p>Java has the concept of "null" - it uses it to indicate something which has not yet been initialized, and does not refer to anything meaningful.</p>
+<p>Manipulating a "null" reference will produce a runtime error.</p>
+<p>For example, consider the following code:
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Java</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">PWMSparkMax</span><span class="w"> </span><span class="n">armMotorCtrl</span><span class="p">;</span>
+<span class="nd">@Override</span>
+<span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">robotInit</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">armMotorCtrl</span><span class="p">.</span><span class="na">setInverted</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div></p>
+<p>When run, you'll see output that looks like this:</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code>********** Robot program starting **********
+Error at frc.robot.Robot.robotInit(Robot.java:23): Unhandled exception: java.lang.NullPointerException
+        at frc.robot.Robot.robotInit(Robot.java:23)
+        at edu.wpi.first.wpilibj.TimedRobot.startCompetition(TimedRobot.java:107)
+        at edu.wpi.first.wpilibj.RobotBase.runRobot(RobotBase.java:373)
+        at edu.wpi.first.wpilibj.RobotBase.startRobot(RobotBase.java:463)
+        at frc.robot.Main.main(Main.java:23)
+Warning at edu.wpi.first.wpilibj.RobotBase.runRobot(RobotBase.java:388): The robot program quit unexpectedly. This is usually due to a code error.
+The above stacktrace can help determine where the error occurred.
+See https://wpilib.org/stacktrace for more information.
+Error at edu.wpi.first.wpilibj.RobotBase.runRobot(RobotBase.java:395): The startCompetition() method (or methods called by it) should have handled the exception above.
+</code></pre></div></td></tr></table></div>
+<p>Reading the stack trace, you can see that the issue happened inside of the <code>robotInit()</code> function, on line 23, and the exception involved "Null Pointer".</p>
+<p>By going to line 23, you can see there is only one thing which could be null - <code>armMotorCtrl</code>. Looking further up, you can see that the <code>armMotorCtrl</code> object is declared, but never instantiated.</p>
+<p>Alternatively, you can step through lines of code with the single step debugger, and stop when you hit line 23. Inspecting the <code>armMotorCtrl</code> object at that point would show that it is null.</p>
+<h4 id="fixing-null-object-issues">Fixing Null Object Issues</h4>
+<p>Generally, you will want to ensure each reference has been initialized before using it. In this case, there is a missing line of code to instantiate the <code>armMotorCtrl</code> before calling the <code>setInverted()</code> method.</p>
+<p>A functional implementation could look like this:
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Java</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">PWMSparkMax</span><span class="w"> </span><span class="n">armMotorCtrl</span><span class="p">;</span>
+<span class="nd">@Override</span>
+<span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">robotInit</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">armMotorCtrl</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">PWMSparkMax</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+<span class="w">    </span><span class="n">armMotorCtrl</span><span class="p">.</span><span class="na">setInverted</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div></p>
+<h3 id="divide-by-zero">Divide by Zero</h3>
+<p>It is not generally possible to divide an integer by zero, and expect reasonable results. Most processors (including the roboRIO) will raise an Unhandled Exception.</p>
+<p>For example, consider the following code:</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Java</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">armLengthRatio</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">elbowToWrist_in</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">39</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">shoulderToElbow_in</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="c1">//TODO</span>
+<span class="nd">@Override</span>
+<span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">robotInit</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">armLengthRatio</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">elbowToWrist_in</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">shoulderToElbow_in</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p>When run, you'll see output that looks like this:</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span></pre></div></td><td class="code"><div><pre><span></span><code>    ********** Robot program starting **********
+Error at frc.robot.Robot.robotInit(Robot.java:24): Unhandled exception: java.lang.ArithmeticException: / by zero
+        at frc.robot.Robot.robotInit(Robot.java:24)
+        at edu.wpi.first.wpilibj.TimedRobot.startCompetition(TimedRobot.java:107)
+        at edu.wpi.first.wpilibj.RobotBase.runRobot(RobotBase.java:373)
+        at edu.wpi.first.wpilibj.RobotBase.startRobot(RobotBase.java:463)
+        at frc.robot.Main.main(Main.java:23)
+Warning at edu.wpi.first.wpilibj.RobotBase.runRobot(RobotBase.java:388): The robot program quit unexpectedly. This is usually due to a code error.
+The above stacktrace can help determine where the error occurred.
+See https://wpilib.org/stacktrace for more information.
+Error at edu.wpi.first.wpilibj.RobotBase.runRobot(RobotBase.java:395): The startCompetition() method (or methods called by it) should have handled the exception above.
+</code></pre></div></td></tr></table></div>
+<p>Looking at the stack trace, we can see a <code>java.lang.ArithmeticException: / by zero</code> exception has occurred on line 24. If you look at the two variables which are used on the right-hand side of the <code>=</code> operator, you might notice one of them has been initialized to zero. Looks like someone forgot to update it! Furthermore, the zero-value variable is used in the denominator of a division operation. Hence, the divide by zero error happens.</p>
+<p>Alternatively, by running the single-step debugger and stopping on line 24, you could inspect the value of all variables to discover <code>shoulderToElbow_in</code> has a value of <code>0</code>.</p>
+<h4 id="fixing-divide-by-zero-issues">Fixing Divide By Zero Issues</h4>
+<p>Divide By Zero issues can be fixed in a number of ways. It's important to start by thinking about what a zero in the denominator of your calculation <em>means</em>. Is it plausible? Why did it happen in the particular case you saw?</p>
+<p>Sometimes, you just need to use a different number other than 0.</p>
+<p>A functional implementation could look like this:
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Java</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">armLengthRatio</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">elbowToWrist_in</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">39</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">shoulderToElbow_in</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
+<span class="nd">@Override</span>
+<span class="kd">public</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">robotInit</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">armLengthRatio</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">elbowToWrist_in</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">shoulderToElbow_in</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div></p>
+<p>Alternatively, if zero <em>is</em> a valid value, adding <code>if/else</code> statements around the calculation can help you define alternate behavior to avoid making the processor perform a division by zero.</p>
+<p>Finally, changing variable types to be <code>float</code> or <code>double</code> can help you get around the issue - floating-point numbers have special values like <code>NaN</code> to represent the results of a divide-by-zero operation. However, you may still have to handle this in code which consumes that calculation's value.</p>
 
 
 
@@ -2292,7 +2728,7 @@ Additionally, As Kotlin and Java are interchangeable, when programming the robot
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../2-introduction/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Introduction to Robotics">
+          <a href="../networking/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Introduction to Networking">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2302,20 +2738,20 @@ Additionally, As Kotlin and Java are interchangeable, when programming the robot
                 Previous
               </span>
               <div class="md-ellipsis">
-                Introduction to Robotics
+                Introduction to Networking
               </div>
             </div>
           </a>
         
         
           
-          <a href="1-basic-syntax/" class="md-footer__link md-footer__link--next" aria-label="Next: Basic Syntax and Structure">
+          <a href="../wpilib/" class="md-footer__link md-footer__link--next" aria-label="Next: Introduction to WPILib">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Basic Syntax and Structure
+                Introduction to WPILib
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -2352,12 +2788,12 @@ Additionally, As Kotlin and Java are interchangeable, when programming the robot
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.action.edit", "navigation.footer", "content.code.copy", "navigation.expand"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.action.edit", "navigation.footer", "content.code.copy", "navigation.expand"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
-        <script src="../../javascripts/mathjax.js"></script>
+        <script src="../javascripts/mathjax.js"></script>
       
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
