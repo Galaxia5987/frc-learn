@@ -4,3 +4,5 @@ nav:
   - version-control
   - kotlin
   - networking
+  - 3-reading-stacktraces.md
+  - wpilib
