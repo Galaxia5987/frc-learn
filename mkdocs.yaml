@@ -15,6 +15,7 @@ theme:
     - navigation.footer
     - content.code.copy
     - navigation.expand
+    - content.tabs.link
 markdown_extensions:
   - pymdownx.highlight:
       linenums: true

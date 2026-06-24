@@ -5,7 +5,7 @@ The WPI Robotics Library(WPILib) is the standard software library provided for t
 In order to write code for our robot, we must use WPILib tools and functions to control everything.
 WPILib provides the way to control our motors.
 
-WPILib is built for Java, but we can also use Kotlin. As Java and Kotlin are fully compatible, we can also write our code in Kotlin.
+WPILib is built for Java, but we can also use Kotlin. As Java and Kotlin are fully compatible.
 
 ## How will we learn
 
