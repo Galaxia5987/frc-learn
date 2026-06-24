@@ -29,6 +29,8 @@ markdown_extensions:
       alternate_style: true
   - attr_list
   - md_in_html
+  - pymdownx.details
+  - admonition
   - pymdownx.blocks.caption
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
@@ -45,3 +47,6 @@ plugins:
 extra_javascript:
   - javascripts/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - stylesheets/extra.css
