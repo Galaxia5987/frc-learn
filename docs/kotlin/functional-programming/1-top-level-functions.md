@@ -20,4 +20,5 @@ fun main(){
 }
 ```
 
-> Notice how in Kotlin the main function is top level too? When there is no need for a class, we can just write top level functions and variables inside regular Kotlin files
+!!! tip
+    Notice how in Kotlin the main function is top level too? When there is no need for a class, we can just write top level functions and variables inside regular Kotlin files

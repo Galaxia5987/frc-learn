@@ -118,4 +118,5 @@ public class Main{
 }
 ```
 
-> In the [Strings](../basic-java/6-strings.md#strings-as-a-reference-type) document we established that Strings are of reference type as well, this is because that Strings are objects too under the hood.
+!!! tip
+    In the [Strings](../basic-java/6-strings.md#strings-as-a-reference-type) document we established that Strings are of reference type as well, this is because that Strings are objects too under the hood.

@@ -1,6 +1,7 @@
 # Motors
 
-> The motors showcased in the document are actually part of the Phoenix vendordep, and not WPILib.
+!!! note
+    The motors showcased in the document are actually part of the Phoenix vendordep, and not WPILib.
 
 Motors are the way our robot interacts with the world! These are extremely important, and we need to know to control them well.
 
@@ -10,7 +11,8 @@ We commonly use the [Kraken X44 or X60](https://wcproducts.com/products/kraken) 
 
 These are Brushless DC motors, with a built in rotary magnetic encoder and a controller, we will go over each part, and understand it.
 
-> There are a lot more motors that are allowed to use in FRC, this guide will only cover TalonFX motors like the Kraken.
+!!! info
+    There are a lot more motors that are allowed to use in FRC, this guide will only cover TalonFX motors like the Kraken.
 
 ![Kraken X44](../images/kraken.png)
 
@@ -131,4 +133,5 @@ We can then stop the motor by providing it with a 0 volt control request:
     // TODO
     ```
 
-> A list of all control requests can be found [here](https://api.ctr-electronics.com/phoenix6/stable/java/com/ctre/phoenix6/controls/package-summary.html)
+!!! tip
+    A list of all control requests can be found [here](https://api.ctr-electronics.com/phoenix6/stable/java/com/ctre/phoenix6/controls/package-summary.html)

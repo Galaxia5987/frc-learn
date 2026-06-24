@@ -2,7 +2,8 @@
 
 Pull Requests(Also abbreviated as "PR") are to propose and collaborate on changes to a repository. These changes are proposed in a [branch](../git.md#branch), which ensures that the [`main`](../git.md#the-main-branch) branch only contains finished and approved work.
 
-> "Pull Request" is a rather confusing name. "Merge Request" describes better what it does. But Pull Request is the official name that we use.
+!!! tip
+    "Pull Request" is a rather confusing name. "Merge Request" describes better what it does. But Pull Request is the official name that we use.
 
 ## How Are We Doing This?
 

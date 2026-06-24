@@ -104,7 +104,8 @@ If you write a separate `fly()` method for both, you lose the magic of polymorph
 
 In Java, a class can only extend one superclass.
 
-> This is to prevent the ["Diamond Problem"](https://www.geeksforgeeks.org/cpp/diamond-problem-in-cpp/).
+!!! note
+    This is to prevent the ["Diamond Problem"](https://www.geeksforgeeks.org/cpp/diamond-problem-in-cpp/).
 
 But real life isn't always that simple. A lot of time, we will need to provide multiple interfaces.
 

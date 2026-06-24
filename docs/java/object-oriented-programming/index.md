@@ -67,7 +67,8 @@ When implementing encapsulation the balance is private, but public methods such 
 
 In simple terms, encapsulation promotes flexibility and security. Each object becomes a self contained unit that manages its own state and behavior making the code simpler to understand, maintain and diagnose when having problems.
 
-> It's worth mentioning that encapsulation is more of a "mindset" than a feature in Java. When creating classes we should have in mind how we can keep this principle.
+!!! note
+    It's worth mentioning that encapsulation is more of a "mindset" than a feature in Java. When creating classes we should have in mind how we can keep this principle.
 
 ### Abstraction
 

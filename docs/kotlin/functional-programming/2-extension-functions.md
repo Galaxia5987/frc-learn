@@ -50,4 +50,5 @@ fun main(){
 }
 ```
 
-> We can create extension functions for every class or type we have!
+!!! note
+    We can create extension functions for every class or type we have!

@@ -81,4 +81,6 @@ When you create a string using quotes(called a "String literal"), Java performs 
 3. If it does not exist: It creates a new string object, places it in the pool, and returns the reference to the newly created String.
 
 And that's how we save on huge amounts of memory when using Strings.
-> Note that this concept is very complex and it's totally okay if you didn't understand any of this. If you did, that great too, and I hope you learned something and found it cool!
+
+!!! note
+    Note that this concept is very complex and it's totally okay if you didn't understand any of this. If you did, that great too, and I hope you learned something and found it cool!

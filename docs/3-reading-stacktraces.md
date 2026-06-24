@@ -1,6 +1,7 @@
 # Reading Stacktraces
 
-> This document is copy-pasted with modifications from WPILib Docs, read the full document [here](https://docs.wpilib.org/en/stable/docs/software/basic-programming/reading-stacktraces.html)
+!!! note
+    This document is copy-pasted with modifications from WPILib Docs, read the full document [here](https://docs.wpilib.org/en/stable/docs/software/basic-programming/reading-stacktraces.html)
 
 ``An unexpected error has occurred.``
 
@@ -81,7 +82,8 @@ Once you've found the stack trace, and found the lines of code which are trigger
 
 Often, just looking in (or near) the problematic location in code will be fruitful. You may notice things you forgot, or lines which don't match an example you're referencing.
 
-> Developers who have lots of experience working with code will often have more luck looking at code than newer folks. That's ok, don't be discouraged! The experience will come with time.
+!!! note
+    Developers who have lots of experience working with code will often have more luck looking at code than newer folks. That's ok, don't be discouraged! The experience will come with time.
 
 A key strategy for analyzing code is to ask the following questions:
 

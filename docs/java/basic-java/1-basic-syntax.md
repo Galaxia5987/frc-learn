@@ -25,7 +25,8 @@ public class HelloWorld {
 ```
 In Java, everything must be inside a Class. You can think of a class as a container for your programs and functions for now, we will expand a lot on the definition of a class later on.
 
-> The name of your class(in this case, HelloWorld) must exactly match the name of the file you save it in (HelloWorld.java). Each file will contain one class, we will see how multiple classes are useful for us later on.
+!!! note
+    The name of your class(in this case, HelloWorld) must exactly match the name of the file you save it in (HelloWorld.java). Each file will contain one class, we will see how multiple classes are useful for us later on.
 
 ### The Main Method
 ```java
@@ -51,12 +52,14 @@ Java cares about capital and lowercase letters. HelloWorld is completely differe
 ### Scopes
 You might have noticed the curly braces(`{`, `}`) surrounding everything else, This is called a scope. Scopes are used to group instructions together and control exactly what the computer can "see" and remember at any given moment.
 
-> Every opening brace `{` must eventually have a matching closing brace `}`
+!!! note
+    Every opening brace `{` must eventually have a matching closing brace `}`
 
 ### Statements
 Just like every English/Hebrew sentence ends with a period, almost every instruction(statement) in Java must end with a semicolon(`;`).
 
-> Scopes don't need semicolons, and instead have curly braces(`{`, `}`)
+!!! note
+    Scopes don't need semicolons, and instead have curly braces(`{`, `}`)
 
 ### Comments
 Java will ignore anything in comments.

@@ -186,4 +186,5 @@ Student
 true
 ```
 
-> Notice that when printing the variables we don't use quatation marks(`""`), as we want to print the value of the variable, and not the name of it.
+!!! note
+    Notice that when printing the variables we don't use quatation marks(`""`), as we want to print the value of the variable, and not the name of it.

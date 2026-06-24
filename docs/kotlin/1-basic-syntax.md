@@ -66,7 +66,8 @@ fun multiplyByTwo(number: Int): Int{
 }
 ```
 
-> Notice here we don't use a `val` or `var`, and we just write the parameter name and type. All parameters in Kotlin are `val`, which means they cannot be changed.
+!!! note
+    Notice here we don't use a `val` or `var`, and we just write the parameter name and type. All parameters in Kotlin are `val`, which means they cannot be changed.
 
 ### Notes
 
@@ -116,7 +117,8 @@ fun multiplyByTwo(number: Int): Int{
 }
 ```
 
-> Note that this doesn't make it a variable, it's still a method, but it just returns something or computes it.
+!!! note
+    Note that this doesn't make it a variable, it's still a method, but it just returns something or computes it.
 
 #### Default Parameters
 
@@ -151,7 +153,8 @@ var myBoolean: Boolean = true
 Not everything in Kotlin requires an explicit type definition.
 Sometimes, the Kotlin compiler can infer our variable or method type automatically.
 
-> It's not always clear when a type can be infered. My advice is to just try and see.
+!!! tip
+    It's not always clear when a type can be infered. My advice is to just try and see.
 
 ```kotlin
 val number = 20 // Kotlin understands that this should be an integer

@@ -5,7 +5,8 @@ Subsystems form an [encapsulation](../java/object-oriented-programming/index.md#
 
 Subsystems will correspond to the physical mechanism they operate, we will have a subsystem for an intake, one for a shooter, one for an elevator, one for a wrist, etc...
 
-> In WPILib 2027, Subsystems will be now called "Mechanism". Everything else is the same, this guide will still call them Subsystems, and will use the old syntax, for now.
+!!! warning
+    In WPILib 2027, Subsystems will be now called "Mechanism". Everything else is the same, this guide will still call them Subsystems, and will use the old syntax, for now.
 
 Subsystems will extend the `SubsystemBase` class, and will override the `periodic` method.
 

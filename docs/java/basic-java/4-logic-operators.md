@@ -37,7 +37,9 @@ Just like logical operators, every comparison results in a simple boolean(`true`
 ### Equal to
 Written as `==`.
 This checks if the value on the left is exactly the same as the value on the right.
-> Warning: Do not confuse a single equals sign(`=` means assigning a value to a variable) with a double equals sign(`==` mean comparison, checking if equals).
+
+!!! warning
+    Do not confuse a single equals sign(`=` means assigning a value to a variable) with a double equals sign(`==` mean comparison, checking if equals).
 
 ```java
 int score = 100;
@@ -47,7 +49,9 @@ boolean isPerfectScore = score == 100; // true
 ### Not equal to
 Written as `!=`.
 This is the opposite of `==`. It returns true if the values are different.
-> Notice it uses the `!` sign, which we learned means the opposite in Java.
+
+!!! note
+    Notice it uses the `!` sign, which we learned means the opposite in Java.
 
 ```java
 int passwordAttempt = 1234;
