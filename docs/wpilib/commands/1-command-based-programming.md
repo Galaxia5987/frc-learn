@@ -115,3 +115,5 @@ The default behaviour is that when an incoming command requires a subsystem that
 
 !!! note
     This behaviour can be altered by using the `.withInterruptionBehaviour` function on the command
+
+Each subsystem has built-in `run` and `runOnce` methods inherited from `SubsystemBase`, when these are used, the subsystem requirement is automatically added.
