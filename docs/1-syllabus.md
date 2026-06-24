@@ -37,7 +37,7 @@
 ### Kotlin Basics
 * Basic Syntax Differences
 * Variables(mutables, immutables)
-* Null safety
+* `when`
 
 ### Functional Programming
 * Top level functions 

@@ -1,6 +1,7 @@
 title: "Kotlin"
 nav:
   - ...
+  - 3-when.md
   - functional-programming
   - kotlin-oop
   - 2-scope-functions.md
