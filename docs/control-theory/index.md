@@ -94,6 +94,8 @@ graph LR
 
 As you can see from the diagram, a change in $y(t)$ does effect our controller, and thus it will continue to tweak it's $u(t)$ until the reference is met.
 
+The sensor that will usually give us the feedback is the motor's encoder.
+
 ----
 
 In the next documents we will learn about the parts of the PID Controller, a common closed loop controller.
