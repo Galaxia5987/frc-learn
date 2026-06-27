@@ -102,7 +102,6 @@
 * PID Terms and their meaning
 * Feedforward control and it's importance
 * Motion Profiling
-* SysId
 
 ## Debugging and using Diagnostic tools
 * What is Network Table?

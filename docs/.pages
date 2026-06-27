@@ -8,3 +8,4 @@ nav:
   - wpilib
   - control-theory
   - state-machines
+  - debugging
