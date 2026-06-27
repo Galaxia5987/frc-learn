@@ -107,19 +107,3 @@
 * What is Network Table?
 * Logging to Network Table
 * Inputs vs Outputs
-
-### AdvantageScope
-* What is AdvantageKit?
-* How to use AdvantageScope
-* Graphs, Views, Fields...
-
-### Simulation
-* A brief on IO interfaces
-
-## Vision and Odometry
-* Pose Estimation and fusion
-
-### PhotonVision
-* What is it and how it's used
-* Hardware
-* Intrinsics Calibration
