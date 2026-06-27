@@ -12,6 +12,8 @@
         <link rel="prev" href="../">
       
       
+        <link rel="next" href="../../../state-machines/">
+      
       
         
       
@@ -2877,6 +2879,28 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#block-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Block Diagram
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pid-feedforward-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PID + Feedforward Control
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2889,6 +2913,230 @@
           </ul>
         </nav>
       
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    State Machines
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    State Machines
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../state-machines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    State Machines
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Debugging and Logs
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Debugging and Logs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../debugging/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Debugging and Logging
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../debugging/1-advantage-kit/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advantage Kit
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../debugging/2-advantage-scope/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advantage Scope
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -3005,6 +3253,28 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#block-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Block Diagram
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pid-feedforward-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PID + Feedforward Control
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3070,6 +3340,40 @@ V = K_g + K_s \cdot sgn(\dot{d}) + K_v \cdot \dot{d} + K_a \cdot \ddot{d}
 <div class="arithmatex">\[
 V = K_g*cos(\theta) + K_s \cdot sgn(\dot{\theta}) + K_v \cdot \dot{\theta} + K_a \cdot \ddot{\theta}
 \]</div>
+<h2 id="block-diagram">Block Diagram</h2>
+<pre class="mermaid"><code>graph LR
+    d["d(t)"] --&gt; diff1["d/dt"]
+
+    diff1 --&gt;|" "| sgn["sgn()"]
+    diff1 --&gt;|" "| kv["Kv"]
+
+    diff1 --&gt; diff2["d/dt"]
+    diff2 --&gt;|" "| ka["Ka"]
+
+    sgn --&gt; ks["Ks"]
+
+    kg["Kg"] ---&gt;|"+"| sum((" "))
+    ks --&gt;|"+"| sum
+    kv --&gt;|"+"| sum
+    ka --&gt;|"+"| sum
+
+    sum --&gt; V(["V(t)"])</code></pre>
+<h2 id="pid-feedforward-control">PID + Feedforward Control</h2>
+<p>When controling systems, we usually use PID and Feedforward together. Feedforward will provide the basic bias to account for the dynamics that we can account for, and we will use PID control to get us exactly at the reference we need.</p>
+<p>The following block diagram can be used:</p>
+<pre class="mermaid"><code>flowchart LR
+    input(["r(t)"]) ---&gt; feedforward["Feedforward controller"]
+    input --&gt;|"+"| errorsum((" "))
+
+    errorsum --&gt;|"e(t)"| feedback["Feedback controller"]
+
+    feedforward --&gt;|"+"| controllersum((" "))
+    feedback --&gt;|"+"| controllersum
+
+    controllersum --&gt;|"u(t)"| plant["Plant"]
+    plant --&gt; output(["y(t)"])
+
+    plant ----&gt;|"-"| errorsum</code></pre>
 
 
 
@@ -3146,6 +3450,22 @@ V = K_g*cos(\theta) + K_s \cdot sgn(\dot{\theta}) + K_v \cdot \dot{\theta} + K_a
             </div>
           </a>
         
+        
+          
+          <a href="../../../state-machines/" class="md-footer__link md-footer__link--next" aria-label="Next: State Machines">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                State Machines
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
         
       </nav>
     
