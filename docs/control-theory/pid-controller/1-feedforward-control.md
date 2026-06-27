@@ -58,3 +58,47 @@ When using an arm, we can modify the feedforward equation to provide a cosine re
 $$
 V = K_g*cos(\theta) + K_s \cdot sgn(\dot{\theta}) + K_v \cdot \dot{\theta} + K_a \cdot \ddot{\theta}
 $$
+
+## Block Diagram
+
+```mermaid
+graph LR
+    d["d(t)"] --> diff1["d/dt"]
+    
+    diff1 -->|" "| sgn["sgn()"]
+    diff1 -->|" "| kv["Kv"]
+    
+    diff1 --> diff2["d/dt"]
+    diff2 -->|" "| ka["Ka"]
+    
+    sgn --> ks["Ks"]
+    
+    kg["Kg"] --->|"+"| sum((" "))
+    ks -->|"+"| sum
+    kv -->|"+"| sum
+    ka -->|"+"| sum
+    
+    sum --> V(["V(t)"])
+```
+
+## PID + Feedforward Control
+
+When controling systems, we usually use PID and Feedforward together. Feedforward will provide the basic bias to account for the dynamics that we can account for, and we will use PID control to get us exactly at the reference we need.
+
+The following block diagram can be used:
+
+```mermaid
+flowchart LR
+    input(["r(t)"]) ---> feedforward["Feedforward controller"]
+    input -->|"+"| errorsum((" "))
+    
+    errorsum -->|"e(t)"| feedback["Feedback controller"]
+    
+    feedforward -->|"+"| controllersum((" "))
+    feedback -->|"+"| controllersum
+    
+    controllersum -->|"u(t)"| plant["Plant"]
+    plant --> output(["y(t)"])
+
+    plant ---->|"-"| errorsum
+```
