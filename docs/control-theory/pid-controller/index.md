@@ -198,7 +198,7 @@ graph LR
     plant --->|"-"| errorsum
 ```
 
-We can eliminate one of the terms by setting their respective constant to zero. If we wanted just a PD controller, we can just set $K_d = 0$.
+We can eliminate one of the terms by setting their respective constant to zero. If we wanted just a PD controller, we can just set $K_i = 0$.
 
 !!! tip
     I also highly recommend watching [this video](https://www.youtube.com/watch?v=UOuRx9Ujsog) by Professor Dmitry Berenson, which explains PID control.
