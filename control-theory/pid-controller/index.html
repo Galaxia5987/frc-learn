@@ -12,6 +12,8 @@
         <link rel="prev" href="../">
       
       
+        <link rel="next" href="1-feedforward-control/">
+      
       
         
       
@@ -2835,6 +2837,34 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="1-feedforward-control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Feedforward Control
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3096,7 +3126,11 @@ u(t) = K_p e(t) + K_i \int_{0}^{t} e(\tau) d\tau + K_d \frac{de(t)}{dt}
     plant --&gt; output(["y(t)"])
 
     plant ---&gt;|"-"| errorsum</code></pre>
-<p>We can eliminate one of the terms by setting their respective constant to zero. If we wanted just a PD controller, we can just set <span class="arithmatex">\(K_d = 0\)</span>.</p>
+<p>We can eliminate one of the terms by setting their respective constant to zero. If we wanted just a PD controller, we can just set <span class="arithmatex">\(K_i = 0\)</span>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>I also highly recommend watching <a href="https://www.youtube.com/watch?v=UOuRx9Ujsog">this video</a> by Professor Dmitry Berenson, which explains PID control.</p>
+</div>
 <hr />
 <p>In the next document we will discover the feedforward controller and how we can incorporate it with our PID controller for even better control.</p>
 
@@ -3175,6 +3209,22 @@ u(t) = K_p e(t) + K_i \int_{0}^{t} e(\tau) d\tau + K_d \frac{de(t)}{dt}
             </div>
           </a>
         
+        
+          
+          <a href="1-feedforward-control/" class="md-footer__link md-footer__link--next" aria-label="Next: Feedforward Control">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Feedforward Control
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
         
       </nav>
     
