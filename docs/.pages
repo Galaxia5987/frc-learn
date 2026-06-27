@@ -7,3 +7,4 @@ nav:
   - 3-reading-stacktraces.md
   - wpilib
   - control-theory
+  - state-machines
