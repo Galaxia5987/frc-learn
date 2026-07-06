@@ -67,6 +67,8 @@ After getting a token, enter it below and click "Setup Environment"
 
 </form>
 
+<script src="https://cdn.jsdelivr.net/gh/Galaxia5987/frc-train@main/setup/dist/github-manager.bundle.js"></script>
+
 <script>
   document.getElementById('configForm').addEventListener('submit', async function(event) {
     event.preventDefault(); 
@@ -90,25 +92,24 @@ After getting a token, enter it below and click "Setup Environment"
     
     const payload = {
       token: token,
-      repo: repo || undefined 
+      repo: repo || null 
     };
-
+    event.target.disabled = true;
     try {
-      const response = await fetch('https://g6lagww1d4.execute-api.eu-north-1.amazonaws.com/default/frc-train-setup', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(payload)
-      });
-
-      if (response.ok) {
-        alert("Success: Request completed.");
-      } else {
-        alert(`Error: Server returned status ${response.status}`);
-      }
+      console.log("Initializing manager...");
+      const manager = new window.GitHubActionsManager(token, repo);
+      
+      await manager.init();
+      await manager.enableRepoActions();
+      await manager.setSecret("USER_PAT", token);
+      await manager.dispatchWorkflow("init_fork.yml", "main");
+      
+      alert("Workflow dispatched successfully!");
     } catch (error) {
-      alert(`Network Error: ${error.message}`);
+        console.error("Failed to dispatch:", error);
+        alert("Error: " + error.message);
+    } finally {
+      event.target.disabled = false;
     }
   });
 </script>
