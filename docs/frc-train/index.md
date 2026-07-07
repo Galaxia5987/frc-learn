@@ -49,19 +49,31 @@ After getting a token, enter it below and click "Setup Environment"
            style="width: 100%; padding: 0.5rem; border: 1px solid var(--md-default-fg-color--lighter); border-radius: 0.1rem; background: var(--md-default-bg-color); color: var(--md-default-fg-color); outline: none;">
   </div>
 
-  <details class="note" style="margin-bottom: 1.5rem;">
-    <summary>Advanced Settings</summary>
-    <div style="margin-top: 1rem;">
-      <label for="repoPath" style="display: block; font-weight: 700; margin-bottom: 0.4rem;">
-        Repository Path
-      </label>
-      <input type="text" id="repoPath" name="repoPath" 
-             placeholder="e.g., AdarWa/frc-train" 
-             pattern="^[a-zA-Z0-9-]+\/[a-zA-Z0-9_.-]+$"
-             title="Must be in the format 'owner/repo'."
-             style="width: 100%; padding: 0.5rem; border: 1px solid var(--md-default-fg-color--lighter); border-radius: 0.1rem; background: var(--md-default-bg-color); color: var(--md-default-fg-color); outline: none;">
-    </div>
-  </details>
+<details class="note" style="margin-bottom: 1.5rem;">
+  <summary>Advanced Settings</summary>
+  
+  <div style="margin-top: 1rem;">
+    <label for="repoPath" style="display: block; font-weight: 700; margin-bottom: 0.4rem;">
+      Repository Path
+    </label>
+    <input type="text" id="repoPath" name="repoPath" 
+           placeholder="e.g., AdarWa/frc-train" 
+           pattern="^[a-zA-Z0-9-]+\/[a-zA-Z0-9_.-]+$"
+           title="Must be in the format 'owner/repo'."
+           style="width: 100%; padding: 0.5rem; border: 1px solid var(--md-default-fg-color--lighter); border-radius: 0.1rem; background: var(--md-default-bg-color); color: var(--md-default-fg-color); outline: none;">
+  </div>
+
+  <div style="margin-top: 1rem;">
+    <label for="language" style="display: block; font-weight: 700; margin-bottom: 0.4rem;">
+      Language
+    </label>
+    <select id="language" name="language" autocomplete="off"
+            style="width: 100%; padding: 0.5rem; border: 1px solid var(--md-default-fg-color--lighter); border-radius: 0.1rem; background: var(--md-default-bg-color); color: var(--md-default-fg-color); outline: none;">
+      <option value="kotlin" selected>Kotlin</option>
+      <option value="java">Java</option>
+    </select>
+  </div>
+</details>
 
   <button type="submit" class="md-button md-button--primary">Setup Environment</button>
 
@@ -90,10 +102,7 @@ After getting a token, enter it below and click "Setup Environment"
       return;
     }
     
-    const payload = {
-      token: token,
-      repo: repo || null 
-    };
+    const lang = document.getElementById('language').value;
     event.target.disabled = true;
     try {
       console.log("Initializing manager...");
@@ -102,7 +111,7 @@ After getting a token, enter it below and click "Setup Environment"
       await manager.init();
       await manager.enableRepoActions();
       await manager.setSecret("USER_PAT", token);
-      await manager.dispatchWorkflow("init_fork.yml", "main");
+      await manager.dispatchWorkflow("init_fork.yml", "main", lang);
       
       alert("Workflow dispatched successfully!");
     } catch (error) {
