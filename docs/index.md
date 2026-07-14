@@ -22,7 +22,7 @@ Contributions are more than welcome! Please just pick something from the [Syllab
 
 Edits are also welcome, you can just click at the pencil icon located in the top right, and submit a PR.
 
-## Does your team uses FRCLearn?
+## Does your team use FRCLearn?
 
 Are you using FRCLearn? Please let us know! Just input your team number below.
 
