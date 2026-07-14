@@ -49,7 +49,7 @@ Are you using FRCLearn? Please let us know! Just input your team number below.
 <div
   class="h-captcha"
   data-sitekey="4984ef7a-17c0-4828-a638-9b1e7158f138"
-  data-theme="light">
+  data-theme="dark">
 </div>
     <button type="submit" class="md-button md-button--primary">Submit</button>
 </form>
