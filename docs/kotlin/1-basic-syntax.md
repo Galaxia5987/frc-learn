@@ -180,7 +180,7 @@ public static void runTaskIfNeeded(boolean isNeeded, Runnable task){
 public static void main(String[] args){
     runTaskIfNeeded(()-> {
         System.out.println("Our Lambda is running!");
-    })
+    }, true);
 }
 ```
 
